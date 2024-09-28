@@ -1,0 +1,50 @@
+{
+    "name": "TASKIFY",
+    "short_name": "Reminders",
+
+
+"icons":[
+
+{
+  "src":"favicon.ico",
+  "sizes":"64x64 32x32 24x24 16x16",
+  "type":"image/x-icon"
+},
+{
+  "src":"maskable.png",
+  "type":"image/png",
+  "sizes":"192x192" ,
+  "purpose":"any maskable"
+},
+{
+  "src":"calendar 192.png",
+  "type":"image/png",
+  "sizes":"192x192" 
+},
+{
+  "src":"calendar 256.png",
+  "type":"image/png",
+  "sizes":"256x256" 
+},
+{
+  "src":"calendar 384.png",
+  "type":"image/png",
+  "sizes":"384x384" 
+},
+{
+  "src":"calendar 512.png",
+  "type":"image/png",
+  "sizes":"512x512" 
+}
+],
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1976d2",
+   
+    "description": "A simple reminder application to keep track of your tasks.",
+    "orientation": "portrait",
+    "scope": "/",
+    "lang": "en-US"
+
+  }

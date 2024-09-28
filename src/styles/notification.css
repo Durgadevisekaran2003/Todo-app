@@ -1,0 +1,51 @@
+/* src/styles/notification.css */
+.notification {
+    position: fixed;
+    bottom: 20px; /* Position from the bottom */
+    right: 20px; /* Position from the left */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: white;
+    padding: 70px 50px; /* Padding for the notification */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: fadeIn 0.5s ease, slideIn 0.5s forwards; /* Add animation */
+    display: flex; /* Use flexbox for button alignment */
+    align-items: center; /* Center content vertically */
+    font-size: 20px;
+}
+
+.close-button,.snooze-button {
+    background-color: #ffd32a; /* Bright yellow */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.close-button:hover, .snooze-button:hover {
+    background-color: #fab804; /* Slightly darker yellow */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px) translateX(-100%); /* Start from below and off-screen */
+    }
+    to {
+        transform: translateY(0) translateX(0); /* End in position */
+    }
+}
